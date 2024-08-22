@@ -338,7 +338,7 @@ float wave(vec3 position) {
                 //グラデーションの方向を決める
                 float gradient = uv.y;
                 // オレンジと青の色味を決める
-                vec3 blueColor = vec3(0.3, 0.3, 1.0);
+                vec3 blueColor = vec3(0.8, 0.3, 0.1);
                 vec3 orangeColor = vec3(1.0, 0.5, 0.0);
 
                 //ノイズ関数を使ってグラデーションの色を決める

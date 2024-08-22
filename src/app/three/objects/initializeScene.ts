@@ -56,9 +56,9 @@ const initializeScene = (canvasElement: HTMLCanvasElement) => {
   const elapsedTime = clock.getElapsedTime();
 
   group.traverse((object) => {
-    if (object.update) {
-      object.updateTime(elapsedTime);
-      object.update(elapsedTime);
+    if ((object as any).update && (object as any).updateTime) { // 変更: 型アサーションを追加
+      (object as any).updateTime(elapsedTime); // 変更: 型アサーションを追加
+      (object as any).update(elapsedTime); // 変更: 型アサーションを追加
     }
   });
 

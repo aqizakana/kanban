@@ -6,7 +6,7 @@ export class CurrentTime {
     private geometry: THREE.BufferGeometry;
     private material: THREE.MeshBasicMaterial;
     private timeText: THREE.Mesh;
-    private font: THREE.Font | null = null; // フォントを保持する変数
+    private font: any = null; // フォントを保持する変数（型をanyに変更）
 
     constructor() {
         this.geometry = new THREE.BufferGeometry();

@@ -9,7 +9,7 @@ export class C_ZIKOKU {
     private material: THREE.MeshBasicMaterial;
 
     private charaMesh: THREE.Mesh;
-    private font: THREE.Font | null = null; // フォントを保持する変数
+    private font: any = null; // フォントを保持する変数（型をanyに変更）
 
 
     constructor() {

@@ -4,8 +4,7 @@ export class Background {
   public scene: THREE.Scene;
   public camera: THREE.PerspectiveCamera;
   public sizes: { width: number; height: number; };
-  public renderer: THREE.WebGLRenderer;
-  
+  public renderer!: THREE.WebGLRenderer; // 変更: 非nullアサーション演算子を追加
 
   constructor() {
     this.scene = new THREE.Scene();
